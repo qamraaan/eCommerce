@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothBazar.Web", "ClothBazar.Web\ClothBazar.Web.csproj", "{8D050ECE-A197-4F89-B6C5-8DE0926CBA16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothBazar.entities", "ClothBazar.entities\ClothBazar.entities.csproj", "{D109DB2E-2435-40D4-8465-03894882DAEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothBazar.Database", "ClothBazar.Database\ClothBazar.Database.csproj", "{CA36C600-72BE-4177-86FC-63A7F6AFF1D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothBazar.services", "ClothBazar.services\ClothBazar.services.csproj", "{0AD3B3FA-7329-488E-AD45-0AB06AD9FF15}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D050ECE-A197-4F89-B6C5-8DE0926CBA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D050ECE-A197-4F89-B6C5-8DE0926CBA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D050ECE-A197-4F89-B6C5-8DE0926CBA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D050ECE-A197-4F89-B6C5-8DE0926CBA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D109DB2E-2435-40D4-8465-03894882DAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D109DB2E-2435-40D4-8465-03894882DAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D109DB2E-2435-40D4-8465-03894882DAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D109DB2E-2435-40D4-8465-03894882DAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA36C600-72BE-4177-86FC-63A7F6AFF1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA36C600-72BE-4177-86FC-63A7F6AFF1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA36C600-72BE-4177-86FC-63A7F6AFF1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA36C600-72BE-4177-86FC-63A7F6AFF1D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD3B3FA-7329-488E-AD45-0AB06AD9FF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD3B3FA-7329-488E-AD45-0AB06AD9FF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD3B3FA-7329-488E-AD45-0AB06AD9FF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD3B3FA-7329-488E-AD45-0AB06AD9FF15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
