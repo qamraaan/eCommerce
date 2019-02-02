@@ -28,7 +28,7 @@ namespace ClothBazar.Web.Controllers
         {
             context.CreateCatogery(catogery);
 
-            return View();
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public ActionResult Edit(int id)
@@ -40,7 +40,7 @@ namespace ClothBazar.Web.Controllers
        public ActionResult Edit(Catogery catogery)
         {
             context.UpdateCatogery(catogery);
-            return View(catogery);
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public ActionResult Delete(Catogery catogery)
