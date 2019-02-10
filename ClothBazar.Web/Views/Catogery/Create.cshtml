@@ -10,6 +10,44 @@
     <br />
     <label>Description:</label>
     <input name="Description" /><br />
+    <label>Image:</label>
+    <input name="Image" type="file" accept="" id="imageUpload" /><br />
+    <input id="ImageUrl" name="ImageUrl"  type="hidden"/>
+    <img id="catogeryImage" /><br />
     <button type="submit">Save</button>
 </form>
+<script>
+    $("#imageUpload").change(function () {
+        debugger;
+        var element =this;
+        var formData = new FormData();
+        var totalFiles = element.files.length;
+        for (var i = 0; i < totalFiles; i++) {
+            var file = element.files[i];
+            formData.append("Photo", file);
+        }
+        $.ajax({
+            type: 'POST',
+            url: '/Shared/UploadImage',
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            processData: false
+               
+        })
+            .done(function (response) {
+
+                if (response.Success == true) {
+
+                    $("#catogeryImage").attr("src", response.ImageURL);
+                    $("#ImageUrl").val(response.ImageURL);
+                }
+               
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+
+                alert("fail");
+            });
+    })
+</script>
 

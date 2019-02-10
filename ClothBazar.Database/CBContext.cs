@@ -10,6 +10,7 @@ namespace ClothBazar.Database
 {
     public class CBContext : DbContext
     {
+        
         public CBContext() : base("name=ClothBazarConnection")
         {
             // this.Database.Connection.ConnectionString=""
